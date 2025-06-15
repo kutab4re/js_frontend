@@ -1,13 +1,224 @@
 body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #2c3e50;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{ 
+  margin-top:50px;
+}
+
+#baf{
+	position: absolute;
+	left: 0vw;
+	font-size: 2.5vw;
+    color: #f0f0f0;
+}
+#baf a{
+	color: rgba(255, 255, 255, 0.7);
+}
+#upg{
+	border-radius: 25px;
+	margin: 1vh;
+	background: inherit;
+	color: white;
+	border: 1px solid #888;
+}
+#user{
+	font-size: 3vh;
+	color: white;
+	position: relative;
+	bottom: 0.5vh;
+}
+#user:hover{
+	background: inherit;
+}
+.input-group-addon{
+	background-color: #333;
+	color: white;
+}
+.navbar{
+	background-color: inherit;
+}
+
+#main{
+	background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+#detail{
+	padding: 2vw;
+	color: #333;
+	padding-bottom: 2vh;
+	background-color: #ffffff;
+}
+
+#add{
+	background-color: #4a627d;
+	color: white;
+	width: 120px;
+	border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+#add:hover{
+	background-color: #5b7692;
+}
+
+#delete{
+	background-color: #c0392b;
+	color: white;
+	width: 80px;
+	border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#delete:hover{
+	background-color: #e74c3c;
+}
+
+#form{
+  padding-bottom: 2vh;
+}
+#like{
+	color: #666;
+	height: 40px;
+	width: 40px;
+	border-radius: 25px;
+	background: inherit;
+	border: 1px solid #ccc;
+}
+#more{
+	color: #666;
+	height: 40px;
+	width: 40px;
+	border-radius: 25px;
+	background: inherit;
+	border: 1px solid #ccc;
+}
+#detail h1{
+	font-size: 5vh;
+	color: #333;
+}
+
+tbody{
+	color: #333;
+}
+thead{
+	color: #666;
+}
+
+tbody tr:hover{
+	background-color: #f0f0f0;
+}
+#dir{
+	font-size: 5vh;
+}
+#dir a{
+	color: #4a627d;
+	position: relative;
+	bottom: 1vh;
+    text-decoration: none;
+}
+#dir a:hover{
+	background: inherit;
+    text-decoration: underline;
+}
+#dir a:focus{
+	background: inherit;
+}
+
+.Add input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.Add input[type="submit"] {
+    background-color: #4a627d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.Add input[type="submit"]:hover {
+    background-color: #5b7692;
+}
+
+.List ul {
+    list-style: none;
+    padding: 0;
+}
+
+.List li {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+
+.List li span {
+    margin-right: 15px;
+}
+
+.List li span b {
+    cursor: pointer;
+    color: #4a627d;
+}
+
+.List .NavLinkButton {
+    display: inline-block;
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.List .NavLinkButton:hover {
+    background-color: #45a049; 
+}
+
+.Add .NavLinkButton {
+    display: inline-block;
+    background-color: #607d8b; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.Add .NavLinkButton:hover {
+    background-color: #546e7a; 
 }
