@@ -53,7 +53,7 @@ class SwordItem extends React.Component {
             <li>
                 <span>{this.props.sword.swordName}</span> 
 				<span><i>{this.props.sword.swordType}</i></span> 
-				<span onClick={this.onAvailabilityClick}><b>{this.props.sword.available ? 'Available' : 'Equipped'}</b></span> {/* Changed prop name and text */}
+				<span onClick={this.onAvailabilityClick}><b>{this.props.sword.available ? 'Available' : 'Equipped'}</b></span>
 				<button onClick={this.onDeleteClick}>Discard</button> 
             </li>
         )
